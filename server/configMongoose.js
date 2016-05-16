@@ -6,7 +6,7 @@ const conf = {
   env: process.env.MONGO_ENV || 'local',
 };
 
-mongoose.connect(`mongodb://${conf.hostname}:${conf.port}/${conf.env}`);
+mongoose.connect('mongodb://test:test@ds023432.mlab.com:23432/reactconventiontest');
 
 var articleSchema = {
   articleTitle:String,
